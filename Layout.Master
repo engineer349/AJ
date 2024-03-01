@@ -1,7 +1,7 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Layout.master.cs" Inherits="AJ.Layout" %>
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
+    <form id="layout" runat="server"> 
+     <div> 
+        <asp:Content ID="Content1"  ContentPlaceHolderID="Header" Runat="Server"> 
     <header class="header">
         <div class="container">
             <div class="logo">
@@ -54,18 +57,24 @@
             </nav>
         </div>
     </header>
-    <main class="main-content">
-        <div class="container">
-            <h1>Welcome to your ERP System!</h1>
-            <p>This is the main content area where you can place your web application content.</p>
-        </div>
-    </main>
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; <?php echo date("2024"); ?> Marikammba Enterprise. All rights reserved.</p>
-        </div>
-    </footer>
-
+  </asp:Content>
+        <asp:Content ID="Content2" ContentPlaceHolderID="Main" Runat="Server">
+            <main class="main-content">
+                <div class="container">
+                    <h1>Welcome to your ERP System!</h1>
+                    <p>This is the main content area where you can place your web application content.</p>
+                </div>
+            </main>
+      </asp:Content>
+        <asp:Content ID="Content3" ContentPlaceHolderID="Footer" Runat="Server" >
+                 <footer class="footer">
+                     <div class="container">
+                         <p>&copy; <?php echo date("2024"); ?> Marikammba Enterprise. All rights reserved.</p>
+                     </div>
+                </footer>
+        </asp:Content>
+     </div>
+   </form>
     <script src="scripts.js"></script>
 </body>
 </html>

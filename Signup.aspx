@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>ERP</title>
+    <title>SignUp</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -14,7 +14,7 @@
 <body>
     <div class="login-container">
         <img src="Images/zencare-logo.png" alt="Your Company Logo" class="logo" />
-        <h1>Signup</h1>
+        <h1>Register</h1>
         <form runat="server" method="post">  
             <div class="form-group">
               <div class="form-row"> 
@@ -64,12 +64,18 @@
                       <a href="#" >I agree to terms of service</a>
                   </div>
               </div>  
-               
-
               </div>
-            <div style="margin-left: 240px">
-                <asp:Button ID="submit" runat="server" Text="Next"  class="btn btn-primary"/>
-            </div>
+            <div>
+               <asp:Button ID="submit" runat="server" Text="Next"  class="btn btn-primary"/>
+             </div>
+            <div class="form-group">
+              <div class="form-row">
+                  <div class="col-md-12">                     
+                      <a href="Login.aspx">Already have an account?</a>
+                  </div>
+              </div>  
+              </div>
+            
 
         </form>
     </div>
