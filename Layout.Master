@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Layout.master.cs" Inherits="AJ.Layout" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Marikamba Enterprise</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-zmvONaTkjunuxqsTtFtBdLA7V16z/8zVAjT8fuU1zBHATQzfwCuDAtKnBFKuPP+8bv6ASqggrwzKvqQ9cA5iWA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="~/Images/zencare-logo.png" alt="Your Company Logo"/>
+                <h1>Marikamba Enterpise</h1>
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li class="dropdown">
+                        <a href="#">Purchase <i class="fa fa-angle-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#">Quotation</a></li>
+                            <li><a href="#">Order</a></li>
+                            <li><a href="#">Invoice</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Sales <i class="fa fa-angle-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#">Quotation</a></li>
+                            <li><a href="#">Order</a></li>
+                            <li><a href="#">Invoice</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Inventory Management <i class="fa fa-angle-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#">Add Stock</a></li>
+                            <li><a href="#">Re-entry</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Finance <i class="fa fa-angle-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#">Expense</a></li>
+                            <li><a href="#">Ledger</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Reports</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main-content">
+        <div class="container">
+            <h1>Welcome to your ERP System!</h1>
+            <p>This is the main content area where you can place your web application content.</p>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <?php echo date("2024"); ?> Marikammba Enterprise. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

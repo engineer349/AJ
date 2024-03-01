@@ -1,0 +1,40 @@
+﻿.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    margin: 150px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.logo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+
+.textbox {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.body{
+    font-family:'Times New Roman','Times New Roman', Times, serif;
+}
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+  .btn:hover {
+        background-color: #45a049;
+    }
